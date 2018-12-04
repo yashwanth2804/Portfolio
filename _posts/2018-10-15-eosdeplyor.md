@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Eos deployer 12
+title:  Eos deployer
 tags:
 - News
 - Tags
