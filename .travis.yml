@@ -9,10 +9,14 @@ script: ./script/cibuild
 
 cache: bundler
 
+env:
+   global:
+   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+
 deploy:
   provider: surge
   skip_cleanup: true
   project: ./_site/
-  domain: https://yaswanth.surge.sh
+  domain: ex9999999.surge.sh
 on:
   branch: master
