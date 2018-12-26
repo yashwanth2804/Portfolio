@@ -8,3 +8,8 @@ before_script:
 script: ./script/cibuild
 
 cache: bundler
+
+deploy:
+  provider: surge
+  project: ./_site/
+  domain: ex9999999.surge.sh
