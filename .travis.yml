@@ -14,3 +14,5 @@ deploy:
   skip_cleanup: true
   project: ./_site/
   domain: ex9999999.surge.sh
+on:
+  branch: master
