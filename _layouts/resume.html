@@ -1,74 +1,115 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title>{{ site.title }}</title>
-    <meta name="description" content="{{ site.name }}'s Résumé">
-    <meta name="author" content="{{ site.name }} @{{ site.twitter }}">
+    <meta name="description" content="{{ site.name }}'s Résumé" />
+    <meta name="author" content="{{ site.name }} @{{ site.twitter }}" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
 
-    <link rel="stylesheet" href="../{{ site.baseurl }}static/css/base.css">
-    <link rel="stylesheet" href="../{{ site.baseurl }}static/css/skeleton.css">
-    <link rel="stylesheet" href="../{{ site.baseurl }}static/css/layout.css">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../{{ site.baseurl }}static/css/base.css" />
+    <link
+      rel="stylesheet"
+      href="../{{ site.baseurl }}static/css/skeleton.css"
+    />
+    <link rel="stylesheet" href="../{{ site.baseurl }}static/css/layout.css" />
+    <link
+      rel="stylesheet"
+      href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+    />
 
     <!--[if lt IE 9]>
-    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <link rel="shortcut icon" href="../{{ site.baseurl }}static/img/favicon.ico">
+    <link
+      rel="shortcut icon"
+      href="../{{ site.baseurl }}static/img/favicon.ico"
+    />
     <!-- <link rel="apple-touch-icon" href="static/img/me-icon-57.png"> -->
     <!-- <link rel="apple-touch-icon" sizes="72x72" href="static/img/me-icon-72.png"> -->
     <!-- <link rel="apple-touch-icon" sizes="114x114" href="static/img/me-icon-114.png"> -->
-</head>
-<body>
-<div class="container">
-    <header class="three columns">
-        <img alt="myprofile" src="../{{ site.baseurl }}static/img/yash.jpg" class="me">
+  </head>
+  <body>
+    <div class="container">
+      <header class="three columns">
+        <img
+          alt="myprofile"
+          src="../{{ site.baseurl }}static/img/yash.jpg"
+          class="me"
+        />
         <h1>{{ site.name }}</h1>
         <p>
-            <a href="{{ site.tel_full }}">{{ site.tel }}</a>
+          <a href="{{ site.tel_full }}">{{ site.tel }}</a>
         </p>
         <address>
-            <a href="{{ site.google_maps }}">
-                {{ site.address.street }}<br/>
-                {{ site.address.postcode }}<br/>
-                {{ site.address.city }}<br/>
-                {{ site.address.country }}
-            </a>
+          <a href="{{ site.google_maps }}">
+            {{ site.address.street }}<br />
+            {{ site.address.postcode }}<br />
+            {{ site.address.city }}<br />
+            {{ site.address.country }}
+          </a>
         </address>
         <p>
-            <a href="{{ site.website_full }}">{{ site.website }}</a><br/>
+          <a href="{{ site.website_full }}">{{ site.website }}</a
+          ><br />
         </p>
         <p>
-            <a href="{{ site.email_full }}">{{ site.email }}</a><br/>
-            <a href="https://github.com/{{ site.github }}"><i class="fa fa-github"></i> Github</a> /
-            <a href="https://twitter.com/{{ site.twitter }}"><i class="fa fa-twitter"></i> Twitter</a>
+          <a href="{{ site.email_full }}">{{ site.email }}</a
+          ><br />
+          <a href="https://github.com/{{ site.github }}"
+            ><i class="fa fa-github"></i> Github</a
+          >
+          /
+          <a href="https://twitter.com/{{ site.twitter }}"
+            ><i class="fa fa-twitter"></i> Twitter</a
+          >
+          /<a href="https://www.linkedin.com/in/yaswanth-kambala-2a2b5626/"
+            ><i class="fa fa-linkedin"></i
+          ></a>
         </p>
-    </header>
-    <div class="thirteen columns clearfix">
-
+      </header>
+      <div class="thirteen columns clearfix">
         {{ content }}
 
-    <footer class="thirteen columns">
-        <p> © All rights reserved. Powered by <a href="http://jekyllrb.com/">Jekyll</a>  
-           
-    </footer>
+        <footer class="thirteen columns">
+          <p>
+            © All rights reserved. Powered by
+            <a href="http://jekyllrb.com/">Jekyll</a>
+          </p>
+        </footer>
+      </div>
     </div>
-</div> 
-    
-<script>
-    console.log("loded");
-    
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', '{{ site.google_analytics }}', 'auto');
-  ga('send', 'pageview');
+    <script>
+      console.log("loded");
 
-</script>
-</body>
+      (function(i, s, o, g, r, a, m) {
+        i["GoogleAnalyticsObject"] = r;
+        (i[r] =
+          i[r] ||
+          function() {
+            (i[r].q = i[r].q || []).push(arguments);
+          }),
+          (i[r].l = 1 * new Date());
+        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+      })(
+        window,
+        document,
+        "script",
+        "//www.google-analytics.com/analytics.js",
+        "ga"
+      );
+
+      ga("create", "{{ site.google_analytics }}", "auto");
+      ga("send", "pageview");
+    </script>
+  </body>
 </html>

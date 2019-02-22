@@ -42,10 +42,10 @@
             <h1>ExaHealth - Healthcare vertical</h1>
             <span> <time>May 2017 to Sept 2017</time></span>
         </header>
-        <p>NpiAlerts, is the module dedicated to track the changes of NPIs records from CMS database. This provides the updated NPIs records for every 2 hours span, where as CMS will provides weekly in weekly updates section. It also provides history of changes that a particular NPI record had gone through</p><br>
+        <p>NpiAlerts, is the module dedicated to track the changes of NPIs records from CMS database. This provides the updated NPIs records for every 1 hours span, where as CMS will provides weekly in weekly updates section. It also provides history of changes that a particular NPI record had gone through</p><br>
 
         <h4>Responsibilities</h4>   
-    • Used Scala Future task to call CMS API in parallel,which downloads 54 million records in ~56 minutes <br>
+    • Used Scala Future task to call CMS API in parallel,which downloads 120 million records (240 GB) in ~53 minutes <br>
     • Spark used to load the individual downloaded JSON files to a dataset and applied business logic on it  <br>
     • Using mongodb as the database , stored the updated set of NPI records for every iteration <br>
     • UI/UX accomplished with JSP,CSS as frontend and Java as backend. <br>      
