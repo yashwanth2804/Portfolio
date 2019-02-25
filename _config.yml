@@ -29,3 +29,5 @@ tel_full: tel:+91-7396873676
 
 # needed for travis-ci build
 exclude: [vendor, node_modules]
+include:
+  - _static
