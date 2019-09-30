@@ -7,7 +7,7 @@ before_script:
 
 script: ./script/cibuild
 dist: trusty
-cache: bundle
+cache: bundler
 
 env:
    global:
